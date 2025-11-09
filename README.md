@@ -7,40 +7,40 @@ To develop a UiPath automation process that simulates keyboard operations such a
 
 # Procedure:
 
-## Step 1 : Open UiPath Studio.
+### Step 1 : Open UiPath Studio.
+* Create a new process named Ex 9 KeyboardAutomation.
 
-- Create a new process named KeyboardAutomation_Exercise9.
+### Step 2: Launch the Target Application.
+* Use the Use Application/Browser activity to open Notepad (or any text editor).
+  - Path: C:\Windows\System32\notepad.exe
 
-## Step 2: Launch the Target Application.
+### Step 3: Simulate Typing Text.
+* Drag a Type Into activity inside the Use Application/Browser container.
+* Enter the text:
+  - This is Keyboard Automation using UiPath.
+* In the Properties panel, enable SimulateType = True (for background typing).
 
-- Use the Use Application/Browser activity to open Notepad (or any text editor).
-  * Path: C:\Windows\System32\notepad.exe
+### Step 4: Simulate Shortcut Keys.
 
-## Step 3: Simulate Typing Text.
+* Add a Send Hotkey activity to perform key combinations such as:
+  - Ctrl + S → to save the file.
 
-- Drag a Type Into activity inside the Use Application/Browser container.
-- Enter the text:
-  * This is Keyboard Automation using UiPath.
-- In the Properties panel, enable SimulateType = True (for background typing).
+### Step 5: Add Delay (Optional).
 
-## Step 4: Simulate Shortcut Keys.
+* Insert Delay activities between actions to ensure the system has enough time to respond.
 
-- Add a Send Hotkey activity to perform key combinations such as:
-  * Ctrl + S → to save the file.
-
-## Step 5: Add Delay (Optional).
-
-- Insert Delay activities between actions to ensure the system has enough time to respond.
-
-## Step 6: Save and Run the Workflow.
+### Step 6: Save and Run the Workflow.
 
 Execute the process and observe the simulated keystrokes in Notepad.
+
+# Workflow:
+
 <img width="1919" height="1075" alt="Screenshot 2025-11-09 132306" src="https://github.com/user-attachments/assets/c6d362ca-729f-4dab-a5d4-707c311103f9" />
 <img width="1919" height="1079" alt="Screenshot 2025-11-09 134147" src="https://github.com/user-attachments/assets/ab759557-dac3-419b-9c3a-2de549721cbe" />
 <img width="1919" height="1079" alt="Screenshot 2025-11-09 134153" src="https://github.com/user-attachments/assets/3d77bf5a-12bc-4ffe-b3c9-571fed74a008" />
 
 
-## Output:
+# Output:
 
 The text written into notedpad and saved
 
